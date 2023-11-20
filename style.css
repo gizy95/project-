@@ -1,13 +1,71 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav{
-    color: red;
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background-image: url("images/background/bgk-header.png");
+}
+#header_top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a:hover{
+    color: #64d2c8;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    
 }
 
 #hero-section{
-    color: blue;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+#hero-section h1{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+#hero-section p{
+    font-size: 1.75rem;
+    margin-bottom: 5rem;
+    width: 70rem;
+    text-align: center;
+}
+
+#hero-section button{
+    background-color: transparent;
+    color: #64d2c8;
+    border: 1px solid #64d2c8;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 15rem;
 }
 
 #our_story-section{
