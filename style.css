@@ -7,19 +7,21 @@
 html{
     font-size: 62.5%;
 }
-
+/* HEADER STYLING */
 header{
     background-image: url("images/bgk-header.png");
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
+
 }
+
 #header_top{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0;
 }
-
 
 .logo{
    display: flex;
@@ -28,18 +30,15 @@ header{
    font-size: 3rem;
 }
 
-
 .logo p{
     font-size: 3.5rem;
     padding-left: 1rem;
     color: #64d2c8;
     background: linear-gradient(to right,  #61cbc3, #5388ad);
+    background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
-    
-    
+    color: transparent;   
 }
-
 
 nav ul{
     display: flex;
@@ -97,11 +96,59 @@ nav ul li a{
     font-size: 1.25rem;
     cursor: pointer;
     margin-bottom: 15rem;
-    font-weight: 600;
+    font-weight: 700;
+}
+/* OUR STORY SECTION */
+#our_story-section{
+    max-width: 80%;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
 }
 
-#our_story-section{
-    color: green;
+#our_story-section img{
+    display: flex;
+    margin-left: auto;
+    height: 20rem;
+    width: 20rem;
+}
+
+
+.our_story_text{
+    padding-left: 8rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+#our_story-section h2{
+    font-size:2rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.our_story_text p{
+    font-size: 1.5rem;
+    width: 52rem;
+    color: gray;
+}
+
+.our_story_text button{
+    margin-top: 2.5rem;
+    background-color: transparent;
+    color: #64d2c8;
+    border: 1px solid #64d2c8;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    margin-bottom: 15rem;
+    font-weight: 700;
+
 }
 
 #watch-section{
