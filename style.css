@@ -7,13 +7,13 @@
 html{
     font-size: 62.5%;
 }
+
 /* HEADER STYLING */
 header{
     background-image: url("images/bgk-header.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-
 }
 
 #header_top{
@@ -57,7 +57,6 @@ nav ul li a{
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 600;
-    
 }
 
 #hero-section{
@@ -166,20 +165,230 @@ nav ul li a{
 }
 
 #expertise-section{
-    color: fuchsia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start
+}
+
+.expertise-section p{
+    flex-wrap: wrap;
+}
+
+
+.expertice-subsection{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.expertice-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  width: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 0.1px;
+  border-color: rgb(239, 231, 231) ;
+}
+
+.expertice-card h3 {
+  margin: 5px;
+}
+
+.expertice-card img {
+  margin: 8px;
+}
+
+.expertice-card p {
+  margin: 2px;
 }
 
 #team-section{
-    color: yellowgreen;
+    background-image: url("images/bgk-header.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+.team{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
 }
 
 #contact_client_section{
     color: lightsalmon;
 }
-
-footer{
-    color: blueviolet;
+/* footer */
+html,
+body{
+  margin: 0;
+  padding: 0;
+  min-width: 300px;
 }
 
+.header__top{
+  display: flex;
+  align-items: center;
+  background-color:#000000;
+  height: 70px;
+  min-width: 100vw;
+  color: #ffff;
+}
 
+.header__name{
+  padding-left: 30px;
+}
 
+.header__btn{
+  margin-left: auto;
+  margin-right: 70px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.request__btn{
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #000000;
+  color: #fff;
+}
+
+.sign-in__btn{
+  border-radius: 5px;
+  border: 1px solid #4d5fd6;
+  background-color: #4d5fd6;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.header__search{
+  width: 100%;
+  height: 200px;
+  background-color: #dadbf1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__form{
+  border: 1px solid #000000;
+  min-width: 40%;
+  display: flex;
+  height: 30px;
+}
+
+#input__search{
+  width: 100%;
+  border: none;
+}
+
+.search__btn{
+  border: none;
+  background-color: #fff;
+}
+
+@media screen and (width < 650px) {
+  .header__top{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#000000;
+    height: 100px;
+    color: #ffff;
+  }
+
+  .header__name{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .header__btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .request__btn{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .sign-in__btn{
+    border-radius: 5px;
+    border: 1px solid #4d5fd6;
+    background-color: #4d5fd6;
+    padding: 2px 5px;
+    color: #fff;
+  } 
+}
+/*footer*/
+
+.row{
+    background-image: url("images/bgk-footer.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column; 
+}
+
+.form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.form input{
+    background: transparent;
+    width: 100%;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+/* For tablet screens */
+@media only screen and (max-width: 768px) {
+  .expertise-subsection {
+    grid-template-columns: 200px 200px; /* Two columns for tablets */
+  }
+}
+
+/* For phone screens */
+@media only screen and (max-width: 480px) {
+  .expertise-subsection {
+    grid-template-columns: 200px; /* One column for phones */
+  }
+}
