@@ -314,6 +314,7 @@ nav ul li a{
     padding-top: 6rem;
     gap: 8rem;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
 .contact_form h2{
@@ -653,7 +654,7 @@ footer h4{
     align-items: center;
 }
 
-ul{
+footer ul{
     display: flex;
     justify-content: center;
     align-items: center;
