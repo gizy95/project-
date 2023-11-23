@@ -11,7 +11,7 @@
 }
 
 function onPlayerReady(event) {
-  event.target.pauseVideo();
+  event.target.pauseVideo
 }
 
 function playVideo() {
