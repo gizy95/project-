@@ -197,20 +197,44 @@ nav ul li a{
 }
 
 #expertise-section{
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:flex-start
 }
 
-.expertise-section p{
-    flex-wrap: wrap;
+#expertise-section h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+#expertise-section p{
+  font-family: 'Playfair Display', serif;
+  color: rgb(189, 182, 182);
 }
 
 
 .expertice-subsection{
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: 200px 200px 200px;
+}
+
+.expertice-card h4{
+  font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+  
+}
+
+.expertice-card p{
+  padding-top: 1rem;
+  font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
 }
 
 .expertice-card {
@@ -224,6 +248,7 @@ nav ul li a{
   border-style: solid;
   border-width: 0.1px;
   border-color: rgb(239, 231, 231) ;
+  padding-bottom: 6rem;
 }
 
 .expertice-card h3 {
@@ -335,35 +360,6 @@ textarea::placeholder {
     padding: 1rem 6rem 2.25rem 0rem;
 }
 
-/* footer */
-html,
-body{
-  margin: 0;
-  padding: 0;
-  min-width: 300px;
-}
-
-.header__top{
-  display: flex;
-  align-items: center;
-  background-color:#000000;
-  height: 70px;
-  min-width: 100vw;
-  color: #ffff;
-}
-
-.header__name{
-  padding-left: 30px;
-}
-
-.header__btn{
-  margin-left: auto;
-  margin-right: 70px;
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-
 .request__btn{
   border: 1px solid #fff;
   border-radius: 5px;
@@ -449,7 +445,10 @@ body{
 }
 /*footer*/
 
+
+
 .row{
+    padding-top: 7rem;
     background-image: url("images/bgk-footer.png");
     background-repeat: no-repeat;
     background-size:cover;
