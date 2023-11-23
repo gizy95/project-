@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:wght@700&family=Roboto:wght@300;900&family=Ubuntu:wght@700&family=Vazirmatn:wght@200&display=swap" rel="stylesheet">
+<script src="https://www.youtube.com/iframe_api"></script>
+<script async src="js/app.js"></script>
+
 </head>
 <body>
     <header>
@@ -46,8 +49,9 @@
             </div>
         </section>
         <section id="watch-section">
-            <img src="images/png/play.png">
+            <img onclick="playVideo()" src="images/png/play.png">
             <h3>WATCH OUR STORY</h3>
+            <div id="myVideo" style="display: none;"></div>
         </section>
         <section id="expertise-section">expertise section</section>
         <section id="team-section">team section</section>
@@ -80,5 +84,7 @@
             </section>
     </main>
         <footer>footer</footer>
+        
 </body>
+
 </html>
