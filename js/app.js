@@ -3,7 +3,7 @@
     player = new YT.Player('myVideo', {
     height: '500',
     width: '760',
-    videoId: 'uHt01D6rOLI',
+    videoId: 'dQw4w9WgXcQ',
     events: {
       'onReady': onPlayerReady
     }
