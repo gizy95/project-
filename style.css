@@ -243,15 +243,45 @@ nav ul li a{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:90rem;
+    padding: 50rem;
+    color: #fff;
+    border: white;
 }
-
 
 .team{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
+    padding-bottom: 5rem;
+    color: white;
+    border: #fff;
+    
 }
-/* CONTACT SECTION */
+
+.team h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: white;
+    border: #fff;
+}
+
+
+.white-box{
+    background-color: white;
+    width: 25rem;
+    height: 25rem;
+    margin: 2rem;
+
+}
+
 #contact_client_section{
     display: flex;
     justify-content: center;
